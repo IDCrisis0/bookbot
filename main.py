@@ -1,7 +1,9 @@
+import sys
 from stats import get_word_count, get_char_count, dict_to_sorted_list
 
+
 def main():
-    book_path = "books/frankenstein.txt"
+    book_path = sys.argv[1]
     book_text = get_book_text(book_path)
     num_words = get_word_count(book_text)
     num_chars = get_char_count(book_text)
